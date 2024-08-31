@@ -147,6 +147,8 @@ img {
   color: var(--title-color);
   font-family: var(--second-font);
   font-weight: var(--font-semi-bold);
+  display: flex;
+  gap: 7px;
 }
 
 .nav__toggle,

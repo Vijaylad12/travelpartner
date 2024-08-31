@@ -99,7 +99,7 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+.container,.container1 {
   max-width: 1120px;
   margin-inline: 1.5rem;
 }
@@ -146,6 +146,8 @@ img {
   color: var(--title-color);
   font-family: var(--second-font);
   font-weight: var(--font-semi-bold);
+  display: flex;
+  gap: 7px;
 }
 
 .nav__toggle,
@@ -623,6 +625,7 @@ img {
   }
   .footer{
     padding-block: 5rem 3rem;
+    
 
   }
   .footer__title{
@@ -646,12 +649,15 @@ img {
 .form-select {
   display: block;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 3rem;
   color: #495057;
   background-color: #fff;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border: 2px solid #ced4da;
+  border-radius: 0.8rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 20px;
 }
+
+
