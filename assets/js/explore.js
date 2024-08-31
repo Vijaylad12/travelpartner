@@ -100,8 +100,9 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
         cities: {
+            "Maharashtra": ["Kolhapur","Mumbai", "Pune", "Nagpur", "Aurangabad", "Nashik", "Thane", "Solapur", "Satara"],
             "Delhi": ["Delhi", "New Delhi", "North Delhi", "South Delhi", "East Delhi", "West Delhi"],
-            "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Aurangabad", "Nashik", "Thane", "Solapur", "Satara","Kolhapur"],
+            
             "Karnataka": ["Bangalore", "Mysore", "Hubli", "Dharwad", "Belgaum", "Mangalore", "Shimoga", "Tumkur"],
             "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Erode", "Vellore", "Nagercoil"],
             "West Bengal": ["Kolkata", "Howrah", "Durgapur", "Asansol", "Siliguri", "Malda", "Bardhaman", "Kharagpur"],
