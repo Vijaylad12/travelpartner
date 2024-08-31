@@ -78,6 +78,10 @@ input {
   border: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 h1, h2, h3, h4 {
   color: var(--title-color);
   font-family: var(--second-font);
@@ -88,9 +92,28 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
+.button {
+  margin-top: 20px;
+  display: inline-flex; /* Aligns the text and icon horizontally */
+  align-items: center;  /* Vertically centers the content */
+  padding: 10px 20px;   /* Adds space inside the button */
+  background-color: #5c7b9c; /* Button background color */
+  color: white;         /* Text color */
+  text-decoration: none; /* Removes underline from link */
+  font-size: 16px;      /* Font size */
+  border: none;         /* Removes border (not needed for <a> but good practice) */
+  border-radius: 7px;  /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
+
+.button:hover {
+  background-color: #62b274; /* Darker background on hover */
+}
+
+.button i {
+  margin-left: 8px; /* Adds space between text and icon */
+}
+
 
 img {
   display: block;
@@ -647,20 +670,7 @@ img {
   }
 }
 
-.form-select {
-  display: block;
-  width: 100%;
-  /* padding: 5rem 5rem; */
-  padding: 5px;
-  font-size: 1rem;
-  line-height: 4rem;
-  color: #495057;
-  background-color: #fff;
-  border: 2px solid black;
-  border-radius: 0.8rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  margin-top: 20px;
-}
+
 
 .time-input{
   display: flex;
@@ -674,4 +684,46 @@ img {
   border: 2px solid black; /* Border style */
   border-radius: 0.8rem; /* Rounded corners */
   transition: border-color 0.15s ease-in-out; /* Transition effect */
+}
+
+.add{
+  width: 200%;
+  height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.container1{
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+.container1 h1{
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+label{
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: var(--h3-font-size);
+}
+
+select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select:focus{
+  border-color: #007bff;
+  outline: none;
 }

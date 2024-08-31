@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/travelpartner/assets/img/favicon.png" type="image/x-icon">
 
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/weather.css">
+    <link rel="stylesheet" href="/travelpartner/assets/css/weather.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
@@ -26,27 +26,27 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    <img src="assets/img/logo.svg" style="background-color: white;" height="10px" width="20px"
-                        class="logo">
+                    <img src="/travelpartner/assets/img/logo.svg" style="background-color: white;" height="10px"
+                        width="20px" class="logo">
                     The LandMark <br>
                     Tour
                 </a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="index.html" class="nav__link ">Home</a>
+                            <a href="/travelpartner/public/index.html" class="nav__link ">Home</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="weather.html" class="nav__link">Weather</a>
+                            <a href="/travelpartner/public/weather.html" class="nav__link">Weather</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="popular.html" class="nav__link">Popular</a>
+                            <a href="/travelpartner/public/popular.html" class="nav__link">Popular</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#explore" class="nav__link">Explore</a>
+                            <a href="/travelpartner/public/explore.html" class="nav__link">Explore</a>
                         </li>
 
                     </ul>
@@ -68,26 +68,24 @@
         <!--==================== MAIN ====================-->
         <main class="main">
             <section class="home section" id="home">
-                <img src="assets/img/india/himachal1.jpg" alt="home image" class="home__bg">
+                <img src="/travelpartner/assets/img/india/meghalaya.jpg" alt="home image" class="home__bg">
                 <div class="home__shadow"></div>
                 <div class="home__container container grid">
                     <div class="home__data">
                         <h3 class="home__subtitle">
                             Weather Forecasting
                         </h3>
-
-
                         <div id="container1">
                             <div id="location">
-                                <input type="text" id="country" placeholder="Country">
-                                <input type="text" id="city" placeholder="City">
-                                <input type="submit" id="check" value="Go">
+                                <input type="text" id="country" placeholder="Country" style="border-radius: 7px;">
+                                <input type="text" id="city" placeholder="City" style="border-radius: 7px;">
+                                <input type="submit" id="check" value="Go" style="border-radius: 7px;">
                             </div>
-                            <img src="tempicons/clouds.svg" alt="" id="tempIcon">
+                            <img src="/travelpartner/tempicons/clouds.svg" alt="" id="tempIcon">
                             <div class="flex">
-                                <h2 id="weatherCountry">Cityname</h2>
-                                <h2 id="temperature">0°<strong>C</strong></h2>
-                                <h2 id="weatherDescription">Description</h2>
+                                <h2 id="weatherCountry" style="left: 30px;">Cityname</h2>
+                                <h2 id="temperature" style="left: 30px;">0°<strong>C</strong></h2>
+                                <h2 id="weatherDescription"></h2>
                                 <ul>
                                     <div class="features">
                                         <li id="feelsLike">Feels Like 0°C</li>
@@ -98,7 +96,8 @@
                                 </ul>
 
                             </div>
-                        </div>
+                        </div>    
+
             </section>
         </main>
 
@@ -115,10 +114,10 @@
             <i class="ri-arrow-up-line"></i>
         </a>
         <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="/travelpartner/assets/js/scrollreveal.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src="assets/js/weather.js"></script>
+        <script src="/travelpartner/assets/js/weather.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>

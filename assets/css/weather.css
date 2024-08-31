@@ -681,3 +681,8 @@ img {
     font-family: "myFirstFont"; 
     src: url("fonts/ticking-timebomb-bb.regular.ttf"); 
 }
+
+@media and screen(max-width:1496px)
+{
+    
+}
