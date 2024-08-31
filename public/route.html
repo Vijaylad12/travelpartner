@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Direction With Multiple viaPoints</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Direction With Multiple viaPoints">
+
+    <script
+        src="https://apis.mappls.com/advancedmaps/api/3859d177098b08fbdf60477ae63b443b/map_sdk?layer=vector&v=3.0&callback=initMap1"></script>
+    <script
+        src="https://apis.mappls.com/advancedmaps/api/86792d56-35e1-45c2-895d-bbbd92a5f2e6/map_sdk_plugins?v=3.0"></script>
+    <style>
+        body {
+            margin: 0;
+            /* background-color: whitesmoke; */
+            background-image: url('');
+        }
+
+        #map {
+
+            display: flex;
+            width: 90%;
+            height: 70vh;
+            margin: 0;
+            padding: 0;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5%;
+            /* border-radius: 50px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <!-- <script>
+        /*Map Initialization*/
+        var map, direction_plugin;
+        function initMap1() {
+            map = new mappls.Map('map', {
+                center: [28.09, 78.3],
+                zoom: 5,
+            });
+
+            map.addListener('load', function () {
+                /*direction plugin initialization*/
+                var direction_option = {
+                    map: map,
+                    divWidth: '350px',
+                    isDraggable: false,
+                    end: { label: 'India Gate', geoposition: "28.612964,77.229463" },
+                    Profile: ['driving', 'biking', 'trucking', 'walking'],
+                    via: [
+                        { label: 'panhala-Fort', geoposition: "16.8111961,74.1063813", bestTimeVisit: "m", visited: 0 },
+                        { label: "Dajipur Wildlife Sanctuary", geoposition: "16.3837901,73.858529", bestTimeVisit: "m", visited: 0 },
+                        { label: 'Shri Chatrapati Shahu Museum (New Palace)', geoposition: "16.7193627,74.2291601", bestTimeVisit: "m", visited: 0 },
+                        { label: 'Gaganbawada', geoposition: "16.5447467,73.8285768", bestTimeVisit: "m", visited: 0 },
+                        { label: 'Sagareshwar deer sanctuary', geoposition: "17.1524136,74.3756682", bestTimeVisit: "m", visited: 0 },
+                        { label: 'Rankala', geoposition: "16.6887228,74.2056566", bestTimeVisit: "e", visited: 0 },
+                    ]
+                }
+                mappls.direction(direction_option, function (data) {
+                    direction_plugin = data;
+                    console.log(direction_plugin);
+                    console.log('distance->' + direction_plugin.data[0].distance);
+                    const dist  = direction_plugin.data[0].distance
+                    const cost =  parseFloat(dist.split("km"));
+                    console.log('cost ->' + cost * 3);
+                });
+            });
+        }
+    </script> -->
+    <script src="/travelpartner/assets/js/Map.js"></script>
+    <!-- <script src="Nearby.js"></script> -->
+</body>
+
+</html>
